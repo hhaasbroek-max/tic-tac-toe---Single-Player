@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.app {
+  width: min(92vw, 420px);
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+ 
+h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+ 
+.status {
+  min-height: 28px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+ 
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 24px 0;
+}
+ 
+.cell {
+  aspect-ratio: 1 / 1;
+  border: 0;
+  border-radius: 14px;
+  background: #e5e7eb;
+  color: #111827;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+ 
+.cell:hover {
+  background: #d1d5db;
+}
+ 
+.cell:disabled {
+  cursor: not-allowed;
+  background: #cbd5e1;
+}
+ 
+.cell.winner {
+  background: #bbf7d0;
+}
+ 
+.reset-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 22px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+ 
+.reset-button:hover {
+  background: #1d4ed8;
+}
