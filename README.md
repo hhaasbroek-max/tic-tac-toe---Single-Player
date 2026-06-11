@@ -1,0 +1,1 @@
+I built a browser-based Tic Tac Toe game using HTML for structure, CSS for styling, and JavaScript for game logic. The app handles player turns, win detection, draw detection, board reset, and deployment through GitHub Pages.
